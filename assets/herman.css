@@ -33,6 +33,7 @@ footer {
     width: 1.5rem;
     height: 1.5rem;
     vertical-align: middle;
+    padding-left: calc(var(--size) / 2);
     path {
       fill: var(--color-primary);
     }
