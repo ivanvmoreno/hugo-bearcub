@@ -1,15 +1,16 @@
 :root {
   font-size: 62.5%; /* 10px */
-  --color-dark: #181a20;
-  --color-light: #fafafa;
-  --color-primary: #1a8fe3;
+  --color-dark: #603F26;
+  --color-light: oklch(99.4% 0 0);
+  --color-primary: #B17457;
+  --color-secondary: #FAF7F0;
   --size: 1rem;
   --spacing: calc(var(--size) * 2.4);
 }
 
 body {
-  background: var(--color-dark);
-  color: var(--color-light);
+  background: var(--color-light);
+  color: var(--color-dark);
   padding: 4rem;
   font-family: Avenir, 'Avenir Next LT Pro', Montserrat, Corbel, 'URW Gothic',
     source-sans-pro, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -27,10 +28,23 @@ main,
 footer {
   max-width: 70ch;
   margin-inline: auto;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    path {
+      fill: var(--color-primary);
+    }
+  }
 }
 
 header {
   padding-bottom: var(--spacing);
+}
+
+nav {
+  text-transform: lowercase;
 }
 
 nav a, a.blog-tags {
@@ -140,7 +154,7 @@ code {
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro',
     Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   padding: 2px calc(var(--spacing) / 4);
-  background-color: #282a36;
+  background-color: var(--color-secondary);
   font-size: calc(var(--size) * 1.4);
 }
 pre code {
