@@ -257,7 +257,7 @@ figcaption > p {
     color: inherit;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     cursor: pointer;
   }
 
