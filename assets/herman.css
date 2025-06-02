@@ -261,15 +261,15 @@ figcaption > p {
     cursor: pointer;
   }
 
+  span {
+    font-size: smaller;
+  }
+
   svg {
     padding: 0;
   }
 
   button.upvoted {
-    color: var(--upvoted-color);
-  }
-
-  span.upvote-count {
-    font-size: smaller;
+    color: var(--color-primary);
   }
 }
