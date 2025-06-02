@@ -28,16 +28,16 @@ main,
 footer {
   max-width: 70ch;
   margin-inline: auto;
+}
 
-  svg {
-    width: 1.5rem;
-    height: 1.5rem;
-    vertical-align: middle;
-    padding-left: calc(var(--size) / 2);
+footer svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  padding-left: calc(var(--size) / 2);
 
-    path {
-      fill: var(--color-primary);
-    }
+  path {
+    fill: var(--color-primary);
   }
 }
 
@@ -242,4 +242,34 @@ figcaption > p {
   margin-block-start: 9px;
   text-align: center;
   font-style: italic;
+}
+
+.upvote-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  button.upvote-btn {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: inherit;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    cursor: pointer;
+  }
+
+  svg {
+    padding: 0;
+  }
+
+  button.upvoted {
+    color: var(--upvoted-color);
+  }
+
+  span.upvote-count {
+    font-size: smaller;
+  }
 }
