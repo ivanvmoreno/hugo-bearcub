@@ -34,7 +34,7 @@ footer {
     height: 1.5rem;
     vertical-align: middle;
     padding-left: calc(var(--size) / 2);
-    
+
     path {
       fill: var(--color-primary);
     }
@@ -51,9 +51,32 @@ nav {
 
 nav a, a.blog-tags {
   margin-right: calc(var(--spacing) / 2);
+  text-decoration: none;
 }
 a.blog-tags {
   line-height: 2;
+  text-decoration: none;
+}
+
+a.blog-tags:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 0.3ex;
+  text-underline-offset: 0.3ex;
+}
+
+nav a.active {
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 0.3ex;
+  text-underline-offset: 0.3ex;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 0.4ex;
+  text-underline-offset: 0.3ex;
 }
 
 main {

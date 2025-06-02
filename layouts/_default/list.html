@@ -6,6 +6,7 @@
   <ul class="blog-posts">
     {{ range .Pages }}
     {{ $lang := default "en" .Params.language }}
+    {{ $link := .Params.link }}
     <li>
       <span>
         <i>
@@ -13,7 +14,7 @@
             {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
           </time>
         </i>
-        {{ partial "flag.html" $lang }}
+        {{ partial "flag.html" (dict "lang" $lang "link" $link) }}
       </span>
       {{ if .Params.link }}
         <a href="{{ .Params.link }}" target="_blank">{{ .Title }} ↪</a>
